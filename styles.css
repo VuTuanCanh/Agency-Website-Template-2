@@ -1,9 +1,59 @@
+.hero {
+  background-image: url(./assets/bgr-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 926px;
+}
+.hero .navbar {
+  background: transparent;
+}
+.hero .navbar .collapse .nav-item a {
+  color: white;
+}
+.hero .navbar .collapse .btn {
+  color: #4640be;
+  background: white;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.hero .navbar-toggler {
+  border: 1px solid white;
+}
+.hero .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.hero .content .title h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+}
+.hero .content .title h1 span {
+  color: #ffc656;
+}
+.hero .content .title .db-btn .btn {
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 15px 56px;
+}
+.hero .content .title .db-btn .custom-btn {
+  background-color: white;
+  color: #4640be;
+}
+.hero .content .title .db-btn .custom-btn:hover {
+  color: #ffc656;
+}
+.hero .content .banner img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  color: green;
+html {
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
