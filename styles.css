@@ -3,10 +3,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  height: 926px;
 }
 .hero .navbar {
   background: transparent;
+}
+.hero .navbar .collapse .nav-item {
+  font-weight: 600;
+}
+.hero .navbar .collapse .nav-item:hover a {
+  color: #ffc656;
 }
 .hero .navbar .collapse .nav-item a {
   color: white;
@@ -16,6 +21,9 @@
   background: white;
   font-weight: 600;
   border-radius: 15px;
+}
+.hero .navbar .collapse .btn:hover {
+  color: #ffc656;
 }
 .hero .navbar-toggler {
   border: 1px solid white;
@@ -37,17 +45,109 @@
   border-radius: 15px;
   padding: 15px 56px;
 }
-.hero .content .title .db-btn .custom-btn {
+.hero .content .title .db-btn .custom-btn-1 {
   background-color: white;
   color: #4640be;
 }
-.hero .content .title .db-btn .custom-btn:hover {
+.hero .content .title .db-btn .custom-btn-1:hover {
+  color: #ffc656;
+}
+.hero .content .title .db-btn .custom-btn-2:hover {
   color: #ffc656;
 }
 .hero .content .banner img {
   width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .content .title {
+    margin-top: 7rem;
+    text-align: center;
+  }
+  .hero .content .title .db-btn .btn {
+    padding: 12px 34px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .content .title {
+    margin-top: 7rem;
+    text-align: center;
+  }
+  .hero .content .title .db-btn .btn {
+    padding: 12px 34px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero .content .title .db-btn .btn {
+    padding: 12px 34px;
+  }
+}
+.features {
+  background-color: #dbd9ff;
+}
+.features .card {
+  border-radius: 40px;
+  transition: ease-in-out 0.5s;
+  box-shadow: 0px 5px 6px 3px #888888;
+}
+.features .card img {
+  width: 30%;
+  margin: 0 auto;
+}
+.features .card .card-body .card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.features .card .card-body .card-text {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+}
+.features .card .card-body a:hover {
+  color: #ffc656;
+}
+.features .card:hover {
+  transform: scale(1.1);
+}
+
+.content .item .item-banner img {
+  width: 100%;
+}
+.content .item .item-content .caption {
+  color: #4640be;
+  font-size: 14px;
+  font-weight: 600;
+}
+.content .item .item-content .item-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.content .item .item-content .item-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.content .item .pe-9 {
+  padding-right: 9rem;
+}
+
+@media screen and (max-width: 992px) {
+  .content .item .item-banner img {
+    width: 100%;
+  }
+  .content .item .item-content {
+    text-align: center;
+    padding: 0 30px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

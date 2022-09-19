@@ -3,18 +3,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    height: 926px;
     .navbar {
         background: transparent;
         .collapse {
-            .nav-item a {
-                color: $light-text;
+            .nav-item {
+                font-weight: 600;
+                &:hover {
+                    a {
+                        color: $highlight-text;
+                    }
+                }
+                a {
+                    color: $light-text;
+                }
             }
             .btn {
                 color: $main-color;
                 background: $light-text;
                 font-weight: 600;
                 border-radius: 15px;
+                &:hover {
+                    color: $highlight-text;
+                }
             }
         }
     }
@@ -41,18 +51,71 @@
                     border-radius: 15px;
                     padding: 15px 56px;
                 }
-                .custom-btn {
+                .custom-btn-1 {
                     background-color: $light-text;
                     color: $main-color;
                     &:hover {
                         color: $highlight-text;
                     }
                 }
+                .custom-btn-2:hover {
+                    color: $highlight-text;
+                }
             }
         }
         .banner {
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        .content {
+            display: flex;
+            flex-direction: column;
+            .title {
+                margin-top: 7rem;
+                text-align: center;
+                .db-btn {
+                    .btn {
+                        padding: 12px 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .hero {
+        .content {
+            display: flex;
+            flex-direction: column;
+            .title {
+                margin-top: 7rem;
+                text-align: center;
+                .db-btn {
+                    .btn {
+                        padding: 12px 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero {
+        .content {
+            .title {
+                .db-btn {
+                    .btn {
+                        padding: 12px 34px;
+                    }
+                }
             }
         }
     }
