@@ -1,0 +1,105 @@
+.FAQ {
+    background-color: $main-color;
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        .caption {
+            font-weight: 400;
+            font-size: 14px;
+            color: $highlight-text;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: $light-text;
+        }
+        .FAQ-list {
+            .item {
+                max-width: 480px;
+                margin-bottom: 12px;
+                padding: 1rem;
+                border-radius: 15px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid $light-text;
+                .question {
+                    position: relative;
+                    color: $light-text;
+                    p {
+                        margin-bottom: 0;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "+";
+                        color: $light-text;
+                        right: 0;
+                        font-size: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .answer {
+                    display: none;
+                }
+            }
+            .show {
+                margin: 2px 2px 20px 2px;
+                border-radius: 15px;
+                background: $light-text;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+                    margin: -2px;
+                    border-radius: inherit;
+                }
+                .question {
+                    color: black;
+                    margin-bottom: 20px;
+                    &::after {
+                        position: absolute;
+                        content: "-";
+                        color: black;
+                        right: 0;
+                        font-size: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .answer {
+                    color: $desc-text;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .FAQ {
+        .content {
+            .caption {
+                text-align: center;
+            }
+            .title {
+                text-align: center;
+            }
+            .FAQ-list {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .item {
+                    margin: 12px auto;
+                }
+                .show {
+                    margin: 12px auto;
+                }
+            }
+        }
+    }
+}

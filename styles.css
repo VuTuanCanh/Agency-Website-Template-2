@@ -176,7 +176,7 @@
   margin-bottom: 1rem;
 }
 .testimonials .headline .caption {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   color: #ffc656;
 }
@@ -226,6 +226,232 @@
   color: white;
 }
 
+.portfolio .headline {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.portfolio .headline .caption {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4640be;
+}
+.portfolio .headline .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.portfolio .item-list .item {
+  border-radius: 15px;
+}
+.portfolio .item-list .item:hover img {
+  -webkit-animation: ring 1s ease-in-out;
+          animation: ring 1s ease-in-out;
+}
+.portfolio .item-list .item img {
+  width: 100%;
+  cursor: pointer;
+}
+.portfolio .item-list .item .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.portfolio .item-list .item .desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6d66ff;
+  margin-bottom: 0;
+}
+.portfolio .item-list .btn-custom {
+  max-width: 180px;
+  margin: 2rem auto 0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #4640be;
+  padding: 15px;
+}
+@-webkit-keyframes ring {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  75% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ring {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  75% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.FAQ {
+  background-color: #4640be;
+}
+.FAQ .banner img {
+  width: 100%;
+}
+.FAQ .content .caption {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffc656;
+  margin-bottom: 20px;
+}
+.FAQ .content .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+.FAQ .content .FAQ-list .item {
+  max-width: 480px;
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid white;
+}
+.FAQ .content .FAQ-list .item .question {
+  position: relative;
+  color: white;
+}
+.FAQ .content .FAQ-list .item .question p {
+  margin-bottom: 0;
+}
+.FAQ .content .FAQ-list .item .question::after {
+  position: absolute;
+  content: "+";
+  color: white;
+  right: 0;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.FAQ .content .FAQ-list .item .answer {
+  display: none;
+}
+.FAQ .content .FAQ-list .show {
+  margin: 2px 2px 20px 2px;
+  border-radius: 15px;
+  background: white;
+}
+.FAQ .content .FAQ-list .show::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+}
+.FAQ .content .FAQ-list .show .question {
+  color: black;
+  margin-bottom: 20px;
+}
+.FAQ .content .FAQ-list .show .question::after {
+  position: absolute;
+  content: "-";
+  color: black;
+  right: 0;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.FAQ .content .FAQ-list .show .answer {
+  color: #666666;
+}
+
+@media screen and (max-width: 992px) {
+  .FAQ .content .caption {
+    text-align: center;
+  }
+  .FAQ .content .title {
+    text-align: center;
+  }
+  .FAQ .content .FAQ-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .FAQ .content .FAQ-list .item {
+    margin: 12px auto;
+  }
+  .FAQ .content .FAQ-list .show {
+    margin: 12px auto;
+  }
+}
+.footer {
+  background-color: #333333;
+}
+.footer ul {
+  padding-left: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer ul li:first-child {
+  margin-top: 16px;
+}
+.footer ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer ul li a:hover {
+  font-weight: 600;
+  color: #ffc656;
+}
+.footer i {
+  color: white;
+  transition: ease-in-out 0.4s;
+  font-size: 20px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.footer i:hover {
+  transform: scale(1.3);
+  color: #ffc656;
+}
+.footer .copyright {
+  color: white;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .item .copyright {
+    margin-top: 3rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
